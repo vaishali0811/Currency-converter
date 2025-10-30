@@ -25,7 +25,7 @@ def index():
 
 def fetch_conversion_factor(source,target):
 
-    url = "https://free.currconv.com/api/v7/convert?q={}_{}&compact=ultra&apiKey=9aa0c54f5ad4c460c36d".format(source,target)
+    url = "http://api.freecurrencyapi.com/v1/currencies?apikey=fca_live_nwZECuzZG5Qj3O6iDXRIC4AyTnNVyVmVTJ4C91pd&currencies=EUR%2CUSD%2CINR".format(source,target)
 
     response = requests.get(url)
     response = response.json()
